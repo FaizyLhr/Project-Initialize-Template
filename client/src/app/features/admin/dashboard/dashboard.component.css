@@ -1,0 +1,186 @@
+
+.db-card{
+    background-color: white;
+    border-radius: 17px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 160px;
+    box-shadow: 5px 5px 25px rgb(0 0 0 / 30%);
+}
+.db-card h3{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.db-card .p-count{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.db-card .p-count span{
+    font-size: 46px;
+    font-weight: bold;
+}
+
+
+table th, table td{
+    font-size: 14px;
+    text-align: center;
+}
+
+input{
+    border: 1px solid #c3c2aa;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+.icons{
+  position: relative;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.icons input{
+  height: 20px;
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+.icons .plus-icon{
+  position: absolute;
+  right: 6px;
+  top: 3px;
+}
+
+.icons .minus-icon{
+  position: absolute;
+  left: 6px;
+  top: 3px;
+}
+
+::ng-deep .ngb-dp-weekdays{
+    border: 0 !important;
+  }
+
+  ::ng-deep .ngb-dp-header, ::ng-deep .ngb-dp-header, ::ng-deep .ngb-dp-weekdays, ::ng-deep .ngb-dp-month-name{
+    background-color: #fff !important;
+  }
+
+  ::ng-deep .ngb-dp-month-name{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 24p !important;
+  }
+
+  ::ng-deep .ngb-dp-weekday{
+    color: #6b6b6b !important;
+  }
+
+::ng-deep .select2.ng-select.ng-select-focused:not(.ng-select-opened)>.ng-select-container {
+    box-shadow: none !important;
+}
+
+
+::ng-deep .md-drppicker.ltr {
+  display: flex !important;
+  top: 55px !important;
+  /* right: 0 !important; */
+  left: auto !important;
+}
+
+::ng-deep .md-drppicker.ltr .ranges {
+  white-space: nowrap !important;
+}
+
+::ng-deep .md-drppicker .ranges ul li button {
+  color: #A0A4AD !important;
+}
+
+::ng-deep .md-drppicker .buttons {
+  display: none !important;
+}
+
+
+
+::ng-deep .md-drppicker .ranges ul li button.active,
+::ng-deep .md-drppicker td.active,
+.md-drppicker td.active:hover {
+  background-color: #fff !important;
+  color: #A0A4AD !important;
+}
+
+
+::ng-deep .md-drppicker td.end-date,
+::ng-deep .md-drppicker td.start-date {
+  border-radius: 4px !important;
+}
+
+
+::ng-deep .md-drppicker .drp-animate,
+::ng-deep .md-drppicker .month,
+::ng-deep .md-drppicker td.off,
+.md-drppicker td.off.end-date,
+.md-drppicker td.off.in-range,
+.md-drppicker td.off.start-date {
+  color: #000 !important;
+}
+
+::ng-deep .md-drppicker table thead th {
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+}
+
+
+
+
+::ng-deep .md-drppicker table tbody tr {
+  background: #F1F8FE !important;
+  border-radius: 4px 0px !important;
+}
+
+
+::ng-deep .md-drppicker td.available:hover,
+.md-drppicker th.available:hover,
+::ng-deep .md-drppicker td.available,
+.md-drppicker th.available {
+  background: #F1F8FE !important;
+  border-radius: 4px 0px !important;
+
+}
+
+::ng-deep .md-drppicker td,
+::ng-deep .md-drppicker th {
+  border: 0 !important;
+
+}
+
+::ng-deep .md-drppicker td.off,
+.md-drppicker td.off.end-date,
+.md-drppicker td.off.in-range,
+.md-drppicker td.off.start-date {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+::ng-deep .md-drppicker td.active, ::ng-deep .md-drppicker td.active:hover{
+  background: #f3c615 !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+}
+
+
+
+@media (max-width){
+    .db-card{
+        height: auto;
+    }
+}

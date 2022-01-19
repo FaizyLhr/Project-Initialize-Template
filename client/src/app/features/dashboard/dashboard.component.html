@@ -1,0 +1,94 @@
+<div class="mini-container">
+  <div class="w-100">
+
+    <div class="d-flex pt-3 px-3">
+      <!-- <div class="w-30 ml-auto">
+      <ng-select [items]="cars" class="select1" [clearable]="false" [searchable]="false" placeholder="April"
+        bindLabel="name" bindValue="id">
+      </ng-select>
+    </div> -->
+      <!-- <div class="fs-18 ml-auto fw-400">April <i class="fas fa-chevron-down pointer ml-3"></i></div> -->
+    </div>
+
+    <!-- <div class="calender">
+    <a href="javascript:void(0)"><i class="fas fa-chevron-left fs-75 text-yellow pt-3"></i></a>
+    <div class="d-flex justify-content-between w-75 px-1">
+      <div class="d-flex flex-column align-items-center pt-3">
+        <div class="week">Ma</div>
+        <div class="ca-date">8</div>
+        <div class="mt-2">0</div>
+      </div>
+      <div class="d-flex flex-column align-items-center pt-3">
+        <div class="week">Di</div>
+        <div class="ca-date">9</div>
+        <div class="mt-2">2.5</div>
+      </div>
+      <div class="d-flex flex-column align-items-center pt-3">
+        <div class="week">Wo</div>
+        <div class="ca-date">10</div>
+        <div class="mt-2">0</div>
+      </div>
+      <div class="d-flex flex-column align-items-center pt-3 ca-active px-3">
+        <div class="week">Do</div>
+        <div class="ca-date">11</div>
+        <div class="mt-2 mb-3">4</div>
+      </div>
+      <div class="d-flex flex-column align-items-center pt-3">
+        <div class="week">Vri</div>
+        <div class="ca-date">12</div>
+        <div class=""></div>
+      </div>
+      <div class="d-flex flex-column align-items-center pt-3">
+        <div class="week">Za</div>
+        <div class="ca-date">13</div>
+        <div class=""></div>
+      </div>
+      <div class="d-flex flex-column align-items-center pt-3">
+        <div class="week">Zo</div>
+        <div class="ca-date">14</div>
+        <div class=""></div>
+      </div>
+    </div>
+    <a href="javascript:void(0)"><i class="fas fa-chevron-right fs-75 text-yellow pt-3"></i></a>
+  </div> -->
+    <div class="calender">
+      <week-day-selector class="custom-calender" [weekOnTop]="true" [frameColor]="'#333'" [showMonth]="false"
+        [showFrameSectionBottom]="true" [monthStyle]="{ 'font-size': '.3em' }" [monthStyleActive]="{ color: '#f2f2f2' }"
+        [monthFormat]="'MMMM'" [frameSectionBottomStyle]="{ 'background-color': '#ee210a' }">
+      </week-day-selector>
+    </div>
+
+    <div class="date">Donderdag 12 september</div>
+
+    <a href="javascript:void(0)" class="btn btn-success mt-2 mx-3 d-block" routerLink="/add">
+      <i class="fas fa-plus fs-24 text-white"></i>
+    </a>
+
+    <ul class="list mb-5">
+      <li>
+        <div class="d-flex align-items-center">
+          <div class="mr-3">
+            <div class="pro-name">Projectname</div>
+            <div class="pro-desc">Task description</div>
+          </div>
+          <div class="fs-16 fw-500 text-yellow align-self-start">
+            -Customername
+          </div>
+          <div class="rate">1.5</div>
+        </div>
+      </li>
+      <li *ngFor="let item of row" class="pt-1">
+        <div class="d-flex align-items-center">
+          <div class="mr-3">
+            <div class="pro-name">Projectname</div>
+            <div class="pro-desc">Task description</div>
+          </div>
+          <div class="fs-16 fw-500 text-yellow align-self-start">
+            -Customername
+          </div>
+          <div class="rate">1.5</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

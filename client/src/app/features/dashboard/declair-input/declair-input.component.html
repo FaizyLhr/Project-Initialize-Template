@@ -1,0 +1,46 @@
+<div class="d-flex p-3">
+    <div class="fs-16 fw-500 text-yellow">Annuleer</div>
+    <div class="fs-16 ml-5">Nieuwe declaratie</div>
+</div>
+<form>
+  <div class="form-row">
+    <div class="col-11">
+      <div class="d-flex align-items-center justify-content-between py-3">
+        <div class="fs-16 fw-500">Project</div>
+        <div class="fs-16 fw-500 text-yellow">Customername</div>
+        <!-- <div class="arrows poiner">
+            <div><i class="fas fa-long-arrow-alt-left lh-0"></i></div>
+            <div><i class="fas fa-long-arrow-alt-right"></i></div>
+        </div> -->
+    </div>
+    </div>
+  </div>
+
+
+    <div class="form-row mb-4">
+        <div class="col-11">
+            <!-- <textarea  rows="1" placeholder="Beschrijving"></textarea> -->
+            <ng-select [items]="cars" class="select2" appendTo="body"
+                placeholder="Project" bindLabel="name" bindValue="id">
+            </ng-select>
+        </div>
+    </div>
+    <!-- <div class="form-row mb-4">
+        <div class="col-11"><input type="text" placeholder="Name"></div>
+    </div> -->
+    <div class="form-row mb-4">
+        <div class="col-11"><input type="text" placeholder="Bedrag"></div>
+    </div>
+    <div class="form-row mb-4">
+        <div class="col-11">
+            <textarea  rows="1" placeholder="Beschrijving"></textarea>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-4">
+            <a href="javascript:void(0)" class="btn btn-yellow d-block">Voeg toe</a>
+        </div>
+    </div>
+
+</form>

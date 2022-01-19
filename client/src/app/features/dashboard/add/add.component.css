@@ -1,0 +1,23 @@
+form{
+    padding: 25px;
+}
+
+form input, form textarea{
+    border: 1px solid #c3c2aa;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.arrows div{
+    line-height: 0;
+}
+
+.lh-0{
+    line-height: 0;
+}
+
+::ng-deep .select2.ng-select.ng-select-focused:not(.ng-select-opened)>.ng-select-container {
+    box-shadow: none !important;
+}

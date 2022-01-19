@@ -1,0 +1,84 @@
+
+.db-card{
+  background-color: white;
+  border-radius: 17px;
+  padding: 30px;
+  margin-bottom: 30px;
+  height: 160px;
+  box-shadow: 5px 5px 25px rgb(0 0 0 / 30%);
+}
+.db-card h3{
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.db-card .p-count{
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.db-card .p-count span{
+  font-size: 46px;
+  font-weight: bold;
+}
+.form-group label{
+  font-size: 16px;
+  font-weight: normal;
+  color: #000 !important;
+}
+.form-group input{
+  background-color: #F8FAFD;
+  border-radius: 11px;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+}
+
+table th, table td{
+  font-size: 14px;
+  width: 33.3333%;
+}
+
+input{
+  border: 1px solid #c3c2aa;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+
+::ng-deep .ngb-dp-weekdays{
+  border: 0 !important;
+}
+
+::ng-deep .ngb-dp-header, ::ng-deep .ngb-dp-header, ::ng-deep .ngb-dp-weekdays, ::ng-deep .ngb-dp-month-name{
+  background-color: #fff !important;
+}
+
+::ng-deep .ngb-dp-month-name{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 24p !important;
+}
+
+::ng-deep .ngb-dp-weekday{
+  color: #6b6b6b !important;
+}
+
+::ng-deep .select2.ng-select.ng-select-focused:not(.ng-select-opened)>.ng-select-container {
+  box-shadow: none !important;
+}
+
+@media (max-width){
+  .db-card{
+      height: auto;
+  }
+}

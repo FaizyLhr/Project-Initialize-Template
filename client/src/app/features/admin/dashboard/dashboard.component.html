@@ -1,0 +1,87 @@
+<div class="p-4">
+    <div class="db-card h-auto">
+        <div class="fs-20 fw-600 mb-4">Project</div>
+        <div class="form-row mb-4">
+            <div class="col-md-2">
+                <ng-select [items]="cars" class="select2" appendTo="body" [clearable]="false" [searchable]="false"
+                    placeholder="Klantaam A" bindLabel="name" bindValue="id">
+                </ng-select>
+            </div>
+            <div class="col-md-2">
+                <ng-select [items]="cars" class="select2" appendTo="body" [clearable]="false" [searchable]="false"
+                    placeholder="Project 12" bindLabel="name" bindValue="id">
+                </ng-select>
+            </div>
+            <div class="col-md-2">
+                <!-- <div class="input-with-icon">
+                    <input  (click)="d.toggle()" value="Select Date" class="header-input pl-50" placeholder="" name="dp" [displayMonths]="displayMonths" [navigation]="navigation" [outsideDays]="outsideDays"
+                    [showWeekNumbers]="showWeekNumbers" ngbDatepicker #d="ngbDatepicker">
+                  </div> -->
+                  <div class="date-range">
+                    <form class="form-inline">
+                        <div class="input-icon">
+                          <input type="text" class="form-control date-custom" ngxDaterangepickerMd
+                            [showCustomRangeLabel]="true" [alwaysShowCalendars]="true" [ranges]="ranges" [linkedCalendars]="true"
+                            [isInvalidDate]="isInvalidDate" [showClearButton]="false" placeholder="06/30/2021 - 06/30/2021">
+                        </div>
+                    </form>
+
+                  </div>
+            </div>
+            <div class="col-md-4 offset-2">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div><a href="javascript:void(0)"><i class="fas fa-plus"></i> <span class="ml-2">Voeg freelancer toe</span></a></div>
+                    <div><a href="javascript:void(0)" class="btn btn-yellow"><i class="fas fa-file-pdf"></i> <span class="ml-2">Genereer PDF</span></a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr class="">
+                        <th><span class="text-uppercase">Naam</span></th>
+                        <th><span class="text-uppercase">Datum</span></th>
+                        <th><span class="text-uppercase">Week#</span></th>
+                        <th><span class="text-uppercase">Project</span></th>
+                        <th><span class="text-uppercase">Werkzaamheden</span></th>
+                        <th><span class="text-uppercase">Uren</span></th>
+                        <th class="text-center">
+                            <span class="text-uppercase">Acties</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let school of school">
+                        <td>Value 1</td>
+                        <td>Value 2</td>
+                        <td>Value 3</td>
+                        <td>Value 4</td>
+                        <td>Value 5</td>
+                        <td>
+                          <div class="icons">
+                            <a href="javascript:void(0)" class="plus-icon"> <i class="fas fa-plus"></i></a>
+                            <input type="text">
+                            <a href="javascript:void(0)" class="minus-icon"> <i class="fas fa-minus"></i></a>
+
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center justify-content-center">
+                            <a href="javascript:void(0)" placement="top" ngbTooltip="User Hide" class="text-blue">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="javascript:void(0)" placement="top" ngbTooltip="User Unlock" class="text-blue  mx-3">
+                                <i class="fas fa-unlock"></i>
+                            </a>
+                            <a href="javascript:void(0)" placement="top" ngbTooltip="User block" class="text-blu">
+                                <i class="fas fa-lock"></i>
+                            </a>
+                        </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

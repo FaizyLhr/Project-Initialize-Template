@@ -1,0 +1,70 @@
+<div class="p-4">
+  <div class="db-card h-auto">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="fs-20 fw-600">Project</div>
+
+      <div class="">
+        <a href="javascript:Void(0)" (click)="open(content)" class="btn btn-yellow"><i class="fas fa-plus mr-2"></i> Add</a>
+      </div>
+
+    </div>
+      <div class="table-responsive">
+          <table class="table">
+              <thead>
+                  <tr class="">
+                      <th><span class="text-uppercase">Project Name</span></th>
+                      <th><span class="text-uppercase">Customer Name</span></th>
+                      <th class="text-center">
+                          <span class="text-uppercase">actions</span>
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let school of school">
+                      <td>Project 1</td>
+                      <td>John Doe</td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-center">
+                          <a href="javascript:void(0)" (click)="open(content)" placement="top" ngbTooltip="Project edit" class="text-blue">
+                              <i class="fas fa-edit"></i>
+                          </a>
+                          <a href="javascript:void(0)" placement="top" ngbTooltip="Project delete" class="text-blue mx-3">
+                            <i class="fas fa-trash"></i>
+                          </a>
+                      </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">User info</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-row mb-4">
+        <div class="col">
+          <label>Project Name</label>
+          <input type="text" placeholder="Project Name" class="form-control">
+        </div>
+      </div>
+      <div class="form-row mb-4">
+        <div class="col">
+          <label>Customer Name</label>
+          <input type="text" placeholder="Customer Name" class="form-control">
+        </div>
+      </div>
+
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-yellow" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>

@@ -1,0 +1,186 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-65 {
+  font-size: 65px;
+}
+
+.fs-75{
+  font-size: 40px;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+.lh-1{
+  line-height: 1;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+.mini-container{
+  max-width: 400px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.bg-login{
+    background-color: #fed03d;
+}
+
+.text-yellow{
+  color: #fed03d;
+
+}
+
+.btn-yellow{
+  background-color: #f3c615 !important;
+  color: black;
+}
+
+.poiner{
+  cursor: pointer;
+}
+
+.text-gray{
+  color: #4b5c6b;
+}
+
+
+.add{
+  background-color: #4b5c6b;
+  color: #fff !important;
+}
+
+.add:hover{
+  background-color: #ccc;
+}
+
+.add:active{
+  border: 1px solid #4b5c6b;
+}
+
+input:focus{
+  outline: 0;
+}
+
+@media (max-width : 500px) {
+
+  .mini-container, .mob-nav {
+    width: 100%;
+  }
+
+
+}
